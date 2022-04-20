@@ -40,30 +40,38 @@ https://www.youtube.com/watch?v=lZJ1mar_znk
 
 ---
 
-### Ejecución de tests con Jest y [soporte experimental para ECMAScript Modules (ESM)](https://jestjs.io/docs/ecmascript-modules):
+### Inicio del servidor:
 
-- Unix:
+      cd /ruta/al/proyecto
+      npm start
 
-      En un terminal:
+### Verificación de la respuesta de la ruta de prueba:
 
-      $ cd /ruta/al/proyecto
-      $ node src/index.js
+      curl -X GET http://localhost:3000/ping
 
-      Y en otro terminal:
+      ó navegar a:
 
-      $ cd /ruta/al/proyecto
-      $ NODE_OPTIONS=--experimental-vm-modules npx jest
+      http://localhost:3000/ping
 
-- Windows:
+---
 
-      En una consola:
+### Ejecución de tests con Jest (y soporte experimental para [ECMAScript Modules (ESM)](https://jestjs.io/docs/ecmascript-modules)):
 
-      c:\>cd /ruta/al/proyecto
-      [rutaACarpetaDelProyecto]> node src\index.js
+- Método 1:
 
-      Y en otra consola:
+      cd /ruta/al/proyecto
+      npm test
 
-      c:\>cd /ruta/al/proyecto
-      [rutaACarpetaDelProyecto]> set NODE_OPTIONS=--experimental-vm-modules && npx jest
+- Método 2:
+
+      - Unix (En otro terminal):
+
+            $ cd /ruta/al/proyecto
+            $ NODE_OPTIONS=--experimental-vm-modules npx jest
+
+      - Windows (En otra consola):
+
+            c:\>cd /ruta/al/proyecto
+            set NODE_OPTIONS=--experimental-vm-modules && npx jest
 
 ---

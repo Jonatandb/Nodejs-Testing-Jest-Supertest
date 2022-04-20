@@ -2,10 +2,12 @@
   "name": "nodejs-testing-jest-supertest",
   "version": "1.0.0",
   "description": "Nodejs - Testing con Jest y Supertest",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
+  "homepage": "https://github.com/Jonatandb/Nodejs-Testing-Jest-Supertest",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
   },
   "keywords": [
     "jonatandb",
