@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-testing-jest-supertest",
+  "version": "1.0.0",
+  "description": "Nodejs - Testing con Jest y Supertest",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jonatandb",
+    "jest",
+    "supertest",
+    "nodejs",
+    "api",
+    "rest",
+    "api-rest",
+    "api-rest-nodejs"
+  ],
+  "author": "jonatandb@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}
+
